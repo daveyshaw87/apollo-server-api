@@ -18,13 +18,13 @@ const server = new ApolloServer({
 // Use the Express application as middleware in Apollo server
 server.applyMiddleware({ app })
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 
-app.use(express.static(path.join(__dirname, 'build')));
+// app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/', function (req, res) {
-	res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-  });
+// app.get('/', function (req, res) {
+// 	res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+//   });
 
 app.listen({ port: port }, () => {
 	console.log(`Server running on http://localhost:${port}${server.graphqlPath}`);
