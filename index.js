@@ -6,6 +6,8 @@ const path = require('path');
 require('./server/config/config')
 
 const server = new ApolloServer({
+	introspection: true,
+	playground: true,
 	modules: [
 		require('./server/modules/product'),
 		require('./server/modules/merchant'),
