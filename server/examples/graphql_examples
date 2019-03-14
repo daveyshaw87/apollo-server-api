@@ -1,0 +1,20 @@
+// ADD VOUCHER
+
+mutation {
+  addVoucher(
+    input: {
+      title: "This is a voucher"
+      description: "This is a description"
+      offerType: "Deal"
+      voucherCode: "LOVEH20"
+      savingValue: "20%"
+      deepUrl: "http://localhost:4000/deeplink"
+      siteUrl: "http://localhost:4000/"
+      affiliateNetwork: "AWIN"
+      merchant: "5c892d4518551340f00679d5"
+      categories: ["5c894383dcbd4328cc657c84"]
+    }
+  ) {
+    title
+  }
+}
