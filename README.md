@@ -3,7 +3,7 @@ Apollo Server
 
 
 
-> yarn install
-> yarn dev
+> npm install
+> npm run dev
 
 Hit up http://localhost:3000/graphql and test it out
